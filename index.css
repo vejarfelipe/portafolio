@@ -15,5 +15,11 @@
 .navi{
     display: grid;
     grid-template-columns: auto auto auto auto ;
+    list-style: none;
+    align-items: center;
 
+
+}
+.im1{
+    background-color: rgb(47, 112, 112);
 }
