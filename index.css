@@ -1,25 +1,55 @@
-.container{
-    display:grid;
-    
-    align-items: center;
-    grid-template-columns:auto auto;
+.nav {
+    display: flex; /* Diseño en fila */
+    justify-content: space-between; /* Distribuye los elementos en extremos opuestos */
+    align-items: center; /* Alinea verticalmente */
+    position: fixed; /* Fija el nav en su posición */
+    top: 0; /* Asegura que esté en la parte superior */
+    width: 100%; /* Cubre todo el ancho */
+    z-index: 10; /* Se coloca por encima de otros elementos */
+    padding: 10px 20px; /* Espaciado interno para mayor comodidad */
+    background-color: black; /* Fondo para visibilidad */
+    color: white;
+    opacity: 60%;
 }
-.div1 {
-    background-color:  brown;
-   
-}
-.div2 {
-    background-color: rgb(63, 63, 97);
-    
-}
-.navi{
+
+
+body {
+    background-color: #33372C;
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding-top: 50px; /* Deja espacio para el nav fijo */
     display: grid;
-    grid-template-columns: auto auto auto auto ;
-    list-style: none;
-    align-items: center;
-
-
+    align-content: center;
 }
-.im1{
-    background-color: rgb(47, 112, 112);
+
+section {
+    height: 50vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: relative; /* Asegura que el footer esté en el flujo del contenido */
+    bottom: 0; /* Mantiene el footer al final */
+    padding: 20px; /* Espaciado interno para comodidad */
+    background-color: black; /* Fondo para contraste */
+    color: white; /* Texto visible */
+    text-align: center; /* Centra el texto */
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5); /* Sombra hacia arriba */
+}
+
+a {
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Hereda el color de .nav */
+    padding: 5px 10px; /* Espaciado interno */
+}
+
+.right {
+    font-size: 24px; /* Tamaño más grande para el título */
+    font-weight: bold;
+}
+.left {
+    display: flex; /* Asegura que los enlaces estén alineados en fila */
+    gap: 20px; /* Espacio entre enlaces */
 }
