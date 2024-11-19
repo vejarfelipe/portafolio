@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700|Lato:400,700');
+
 .nav {
     display: flex; /* Diseño en fila */
     justify-content: space-between; /* Distribuye los elementos en extremos opuestos */
@@ -14,6 +17,7 @@
 .nav div h1 {
     margin: 0; /* Elimina márgenes predeterminados del h1 */
     font-size: 24px; /* Ajusta el tamaño del texto si es necesario */
+    font-family: 'Ubuntu',"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .nav div h2 {
@@ -46,6 +50,7 @@ body {
     padding-top: 50px; /* Deja espacio para el nav fijo */
     display: grid;
     align-content: center;
+    font-family: "Quicksand", sans-serif;
 }
 
 section {
@@ -71,6 +76,11 @@ a {
     color: inherit; /* Hereda el color de .nav */
     padding: 5px 10px; /* Espaciado interno */
 }
+a:hover {
+    color: yellow;
+
+}
+
 
 .right {
     font-size: 24px; /* Tamaño más grande para el título */
