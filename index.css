@@ -13,6 +13,9 @@
     background-color: black; /* Fondo para visibilidad */
     color: white;
     opacity: 60%;
+    max-width: 98%; /* Ajusta según tu diseño */
+    margin: 0 auto; /* Centra el nav */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* Sombra hacia arriba */
 }
 .nav div h1 {
     margin: 0; /* Elimina márgenes predeterminados del h1 */
@@ -45,12 +48,14 @@
 }
 
 body {
-    background-color: #33372C;
+    /*background-color: #33372C;*/
+    background-color: #f9f9f9;
     margin: 0; /* Elimina los márgenes predeterminados */
     padding-top: 50px; /* Deja espacio para el nav fijo */
     display: grid;
     align-content: center;
     font-family: "Quicksand", sans-serif;
+    color: #727272;
 }
 
 section {
@@ -82,13 +87,21 @@ a:hover {
 }
 
 
+.braces {
+    color: #FF5733; /* Color específico para las llaves */
+    font-weight: bold; /* Opcional: Negrita para resaltar */
+    
+}
+
 .right {
-    font-size: 24px; /* Tamaño más grande para el título */
-    font-weight: bold;
+    color: white; /* Color general del texto */
+    font-size: 24px; /* Tamaño general */
 }
 .left {
     display: flex; /* Asegura que los enlaces estén alineados en fila */
     gap: 20px; /* Espacio entre enlaces */
+    padding-left: 20px; /* Espaciado hacia la izquierda */
+    margin-right: 20px; /* Espaciado hacia el borde derecho */
 }
 footer  {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7); /* Simula profundidad */
