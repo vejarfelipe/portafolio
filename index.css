@@ -183,31 +183,32 @@ footer  {
     flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
     max-width: 1000px; /* Ancho máximo del contenido */
     margin: 0 auto; /* Centra el contenido */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: un sombreado ligero */
-    border-radius: 8px; /* Bordes redondeados */
     padding: 50px; /* Espaciado interno */
-    background: white; /* Fondo del contenedor */
-    
-    
+    border-radius: 12px; /* Bordes más suaves */
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
+    backdrop-filter: blur(10px); /* Desenfoque del fondo detrás */
+    -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
+    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.25); /* Sombra más pronunciada */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Línea sutil para destacar los bordes */
 }
 
 /* Texto */
 .about-text {
     flex: 1; /* Ocupa espacio proporcional */
     font-family: "Quicksand", sans-serif;
-    color: #333;
+    color: #000000;
 }
 
 .about-text h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #444;
+    color: #0a0a0a;
 }
 
 .about-text p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #666;
+    color: #070707;
 }
 
 /* Foto */
@@ -314,11 +315,14 @@ footer  {
 }
 
 .project-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); /* Sombra profunda para resaltar */
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
+    backdrop-filter: blur(10px); /* Desenfoque del fondo detrás */
+    -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Línea sutil en los bordes */
 }
 
 .project-card:hover {
@@ -337,13 +341,13 @@ footer  {
 
 .project-info h3 {
     font-size: 1.5rem;
-    color: #333;
+    color: #000000;
     margin-bottom: 10px;
 }
 
 .project-info p {
     font-size: 1rem;
-    color: #555;
+    color: #000000;
     margin-bottom: 20px;
 }
 
