@@ -86,7 +86,7 @@ a {
 }
 a:hover {
     color: yellow;
-    transform: scale(1.5);
+    
 
 }
 
@@ -222,7 +222,7 @@ footer  {
     width: 200px; /* Tamaño ajustable */
     height: 200px; /* Tamaño ajustable */
     border-radius: 50%; /* Hace el marco circular */
-    border: 5px solid rgba(0, 1, 2, 0.6); /* Marco con borde */
+    border: 2px solid rgba(219, 222, 224, 0.6); /* Marco con borde */
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.8); /* Resplandor celeste */
     object-fit: cover; /* Asegura que la imagen se ajuste al marco circular */
     transition: transform 0.3s ease; /* Agrega una animación suave */
@@ -246,7 +246,7 @@ footer  {
     width: 50px; /* Tamaño ajustable de los íconos */
     height: 50px;
     border-radius: 50%; /* Hace los íconos circulares */
-    border: 3px solid rgba(0, 0, 0, 0.6); /* Marco circular */
+    border: 1px solid rgba(219, 222, 224, 0.6); /* Marco circular */
     box-shadow: 0 0 10px 3px rgba(0, 1, 2, 0.8); /* Resplandor celeste */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
 }
@@ -362,3 +362,19 @@ footer  {
     color: #000000;
     transition: 1s;
 }
+
+#language-switch {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #language-switch:hover {
+    background-color: #000000;
+    scale: 1.1;
+    transition: 1s;
+  }
